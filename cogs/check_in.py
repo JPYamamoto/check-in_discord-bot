@@ -92,7 +92,7 @@ class CheckIn(commands.Cog):
         elif key == 'discard_roles':
             self.config.discard_roles = [role.name for role in values]
         elif key == 'goto_channel':
-            self.config.listen_channel = values[0].name
+            self.config.goto_channel = values[0].name
         else:
             await ctx.send(f"Configuración inválida.")
 
