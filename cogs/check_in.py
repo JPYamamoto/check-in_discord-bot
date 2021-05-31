@@ -25,7 +25,7 @@ try:
 except FileNotFoundError:
     FILE_CONTENTS = None
 
-default_config = BotConfig(FILE_CONTENTS, 'check-in', 0, ['noauth'], ['no-check'], 'codigo-de-conducta')
+default_config = BotConfig(FILE_CONTENTS, 'check-in', 0, ['no-auth'], ['no-check'], 'codigo-de-conducta')
 
 
 class CheckIn(commands.Cog):
