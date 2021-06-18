@@ -39,6 +39,7 @@ class CheckIn(commands.Cog):
             self.refresh()
 
     def refresh(self):
+        self.emails = set()
         reader = csv.reader(self.config.csv.decode("utf-8").split('\n'))
 
         # Ignore first line, containing headers.
